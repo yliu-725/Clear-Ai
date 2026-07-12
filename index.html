@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClearLetter AI</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo"> ClearLetter AI </a>
+      </div>
+    </header>
+    <main class="main">
+      <!-- UPLOAD SECTION -->
+      <section class="upload" id="uploadScreen">
+        <div class="upload__hero">
+          <span class="upload__badge"> AI Document Assistant </span>
+          <h1 class="upload__title">
+            Understand your mail
+            <span class="upload__title-highlight"> in seconds.</span>
+          </h1>
+          <p class="upload__description">
+            Upload a letter, bill, or notice. ClearLetter AI explains what it
+            means and highlights important deadlines.
+          </p>
+        </div>
+        <div class="upload__box">
+          <div class="upload__icon">📄</div>
+          <h2 class="upload__box-title">Upload your document</h2>
+          <p class="upload__box-description">
+            Upload a photo or image of your document
+          </p>
+          <input
+            type="file"
+            id="fileInput"
+            class="upload__input"
+            accept="image/png, image/jpeg, image/webp"
+            hidden
+          />
+          <button class="upload__button" id="uploadBtn">Choose document</button>
+          <span class="upload__file-type"> JPG, PNG or WEBP </span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
