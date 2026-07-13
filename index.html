@@ -44,6 +44,50 @@
           <span class="upload__file-type"> JPG, PNG or WEBP </span>
         </div>
       </section>
+      <!-- LOADING SECTION -->
+      <section class="loading hidden" id="loadingScreen">
+        <div class="loading__spinner"></div>
+        <h2 class="loading__title">Reading your document...</h2>
+        <p class="loading__description">
+          Finding important details and deadlines.
+        </p>
+      </section>
+      <!-- RESULT SECTION -->
+      <section class="result hidden" id="resultScreen">
+        <button class="result__back-button" id="backBtn">
+          ← Scan another document
+        </button>
+        <div class="result__card">
+          <span class="result__document-type" id="documentType"></span>
+          <h1 class="result__title">Here's what your document say</h1>
+          <p class="result__summary" id="documentSummary"></p>
+          <div class="deadline" id="deadlineBox">
+            <div class="deadline__icon">!</div>
+            <div class="deadline__content">
+              <span class="deadline__label">Important deadline</span>
+              <h3 class="deadline__date" id="deadlineDate"></h3>
+              <p class="deadline__description">
+                Complete the required action before this date.
+              </p>
+            </div>
+          </div>
+          <div class="action">
+            <span class="action__label">WHAT YOU NEED TO DO</span>
+            <p class="action__description" id="documentAction"></p>
+          </div>
+        </div>
+      </section>
+      <!-- ERROR SECTION -->
+      <section class="error hidden" id="errorScreen">
+        <div class="error__card">
+          <div class="error__icon">!</div>
+          <h2 class="error__title">We couldn't read your document</h2>
+          <p class="error__description">
+            Try uploading a clearer image with the entire document visible.
+          </p>
+          <button class="error__button" id="errorButton">Try again</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
